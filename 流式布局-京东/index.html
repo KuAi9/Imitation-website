@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>京东</title>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        /* .swiper-container {
+            width: 100%;
+        }
+        
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+        }
+        
+        .swiper-slide img {
+            opacity: 0;
+        } */
+        
+        .swiper-container {
+            width: 100%;
+            /* position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -150px;
+            margin-top: -150px; */
+        }
+        
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .swiper-slide img {
+            width: 100%;
+            opacity: 0;
+        }
+    </style>
+    <script src="./js/swiper.min.js"></script>
+</head>
+
+<body>
+    <!-- app start -->
+    <header class="app">
+        <ul>
+            <li></li>
+            <li></li>
+            <li>打开京东App，购物更轻松</li>
+            <li>立即打开</li>
+        </ul>
+    </header>
+    <!-- app end -->
+    <!-- 搜索栏 start -->
+    <div class="search-wrap">
+        <div class="search-btn"></div>
+        <div class="search">
+            <div class="jd-icon"></div>
+            <div class="sou-icon"></div>
+            <form action="">
+                <input type="search" name="" id="">
+            </form>
+        </div>
+        <div class="search-login">登陆</div>
+    </div>
+    <!-- 搜索栏 end -->
+    <!-- 内容部分 start -->
+    <div class="main-content">
+        <!-- 轮播图 -->
+        <div class="slider">
+            <!-- Swiper -->
+            <!-- <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(./uplode/banner.dpg)"><img src="./uplode/banner.dpg" alt=""></div>
+                    <div class="swiper-slide" style="background-image:url(./uplode/banner1.dpg)"><img src="./uplode/banner.dpg" alt=""></div>
+                    <div class="swiper-slide" style="background-image:url(./uplode/banner2.dpg)"><img src="./uplode/banner.dpg" alt=""></div>
+                    <div class="swiper-slide" style="background-image:url(./uplode/banner3.dpg)"><img src="./uplode/banner.dpg" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div> -->
+            <!-- Swiper end-->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(./uplode/banner.dpg)"><img src="./uplode/banner.dpg" alt=""></div>
+                    <div class="swiper-slide" style="background-image:url(./uplode/banner1.dpg)"><img src="./uplode/banner1.dpg" alt=""></div>
+                    <div class="swiper-slide" style="background-image:url(./uplode/banner2.dpg)"><img src="./uplode/banner2.dpg" alt=""></div>
+                    <div class="swiper-slide" style="background-image:url(./uplode/banner3.dpg)"><img src="./uplode/banner3.dpg" alt=""></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- 小家电超级品牌日 -->
+        <div class="brand">
+            <div>
+                <a href="#"><img src="./uplode/pic11.dpg" alt=""></a>
+            </div>
+            <div>
+                <a href="#"><img src="./uplode/pic22.dpg" alt=""></a>
+            </div>
+            <div>
+                <a href="#"><img src="./uplode/pic33.dpg" alt=""></a>
+            </div>
+        </div>
+        <!-- 导航 -->
+        <div class="nav clearfix">
+            <a href="">
+                <img src="./uplode/nav1.webp" alt="">
+                <span>京东超市</span>
+            </a>
+            <a href="">
+                <img src="./uplode/nav2.webp" alt="">
+                <span>全球购</span>
+            </a>
+            <a href="">
+                <img src="./uplode/nav3.webp" alt="">
+                <span>手机充值</span>
+            </a>
+            <a href="">
+                <img src="./uplode/nav1.webp" alt="">
+                <span>京东超市</span>
+            </a>
+            <a href="">
+                <img src="./uplode/nav2.webp" alt="">
+                <span>京东超市</span>
+            </a>
+            <a href="">
+                <img src="./uplode/nav3.webp" alt="">
+                <span>京东超市</span>
+            </a>
+            <a href="">
+                <img src="./uplode/nav1.webp" alt="">
+                <span>京东超市</span>
+            </a>
+            <a href="">
+                <img src="./uplode/nav2.webp" alt="">
+                <span>京东超市</span>
+            </a>
+            <a href="">
+                <img src="./uplode/nav3.webp" alt="">
+                <span>京东超市</span>
+            </a>
+            <a href="">
+                <img src="./uplode/nav1.webp" alt="">
+                <span>京东超市</span>
+            </a>
+        </div>
+        <!-- 新闻模块 -->
+        <div class="news">
+            <a href="#"><img src="uplode/new1.dpg"></a>
+            <a href="#"><img src="uplode/new2.dpg"></a>
+            <a href="#"><img src="uplode/new3.dpg"></a>
+        </div>
+    </div>
+
+    <!-- 内容部分 end -->
+
+</body>
+<script>
+    var search_wrap = document.querySelector('.search-wrap');
+    var app = document.querySelector('.app');
+    document.addEventListener('scroll', function() {
+        if (window.pageYOffset == 0) {
+            search_wrap.style.backgroundColor = '';
+            app.style.display = 'block';
+        } else {
+            search_wrap.style.backgroundColor = '#333';
+            app.style.display = 'none';
+        }
+    });
+
+    // var swiper = new Swiper('.swiper-container', {
+    //     effect: 'coverflow',
+    //     grabCursor: true,
+    //     centeredSlides: true,
+    //     slidesPerView: 'auto',
+    //     coverflowEffect: {
+    //         rotate: 50,
+    //         stretch: 0,
+    //         depth: 100,
+    //         modifier: 1,
+    //         slideShadows: true,
+    //     },
+    //     pagination: {
+    //         el: '.swiper-pagination',
+    //     },
+    // });
+    var swiper = new Swiper('.swiper-container', {
+        effect: 'cube',
+        grabCursor: true,
+        cubeEffect: {
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.94,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+</script>
+
+</html>
